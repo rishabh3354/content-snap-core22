@@ -39,8 +39,8 @@ parts:
        - samba-libs
        - ffmpeg
        - mpv
-       - freeglut3
-       - libgtk2.0-0
+#       - freeglut3
+#       - libgtk2.0-0
 
   cleanup:
     after:
