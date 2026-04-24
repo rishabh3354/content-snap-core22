@@ -39,6 +39,12 @@ parts:
        - samba-libs
        - ffmpeg
        - mpv
+       - fontconfig
+       - fonts-noto-core
+       - fonts-noto-cjk
+       - fonts-noto-extra
+       - fonts-noto-color-emoji
+       - fonts-dejavu-core
 
   cleanup:
     after:
