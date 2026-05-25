@@ -45,7 +45,6 @@ parts:
        - fonts-noto-extra
        - fonts-noto-color-emoji
        - fonts-dejavu-core
-       - libcanberra-gtk3-module
 
   cleanup:
     after:
