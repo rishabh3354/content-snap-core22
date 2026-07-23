@@ -39,6 +39,10 @@ parts:
        - samba-libs
        - ffmpeg
        - mpv
+       - mesa-va-drivers          # AMD, plus generic fallback
+       - intel-media-va-driver    # Intel Gen9+ (iHD) — your renderD128
+       - i965-va-driver           # older Intel
+       - vainfo                   # tiny, worth having for support tickets
        - fontconfig
        - fonts-noto-core
        - fonts-noto-cjk
