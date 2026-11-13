@@ -1,6 +1,23 @@
 # content-snap-core22
 This snap consists of necessary lib packages that are required by our apps, including ffmpeg, mpv, etc.
 
+## mpv 0.41 (2026-11-13)
+
+mpv now comes from `ppa:ubuntuhandbook1/mpv` (0.41, FFmpeg 7 and libplacebo built in) instead of Ubuntu 22.04's
+0.34 - Torrent4K needs it (HDR / Dolby Vision). ffmpeg and every library stay Ubuntu's; the snap grows about 10 MB.
+Every app on this runtime gets the new mpv with the update, so release it to **beta first**:
+
+```bash
+snapcraft                                                        
+snapcraft upload --release=beta content-snap-core22_22.04_amd64.snap
+sudo snap refresh content-snap-core22 --beta                     
+                                                                 
+snapcraft release content-snap-core22 <revision> stable       
+```
+
+Going back: `snapcraft release content-snap-core22 11 stable` (revision 11 = the mpv 0.34 one) and, on a machine,
+`sudo snap refresh content-snap-core22 --stable`.
+
 snapcraft upload steps:
 
 

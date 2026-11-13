@@ -9,6 +9,11 @@ base: core22
 architectures:
   - build-on: amd64
 
+package-repositories:
+  - type: apt
+    ppa: ubuntuhandbook1/mpv
+    key-id: F4E48910A020E77056748B745738AE8480447DDF
+
 slots:
   content-snap-core22:
     interface: content
@@ -39,10 +44,10 @@ parts:
        - samba-libs
        - ffmpeg
        - mpv
-       - mesa-va-drivers          # AMD, plus generic fallback
-       - intel-media-va-driver    # Intel Gen9+ (iHD) — your renderD128
-       - i965-va-driver           # older Intel
-       - vainfo                   # tiny, worth having for support tickets
+       - mesa-va-drivers
+       - intel-media-va-driver
+       - i965-va-driver
+       - vainfo
        - fontconfig
        - fonts-noto-core
        - fonts-noto-cjk

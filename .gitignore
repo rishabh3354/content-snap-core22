@@ -166,3 +166,6 @@ migrations/
 *.xml
 *.iml
 .idea/
+
+# built snaps (upload them, never commit them)
+*.snap
